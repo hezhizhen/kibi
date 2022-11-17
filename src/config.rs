@@ -227,7 +227,7 @@ mod tests {
             custom_config.tab_stop, custom_config.quit_times
         );
 
-        fs::create_dir_all(&kibi_config_home).unwrap();
+        fs::create_dir_all(kibi_config_home).unwrap();
 
         fs::write(kibi_config_home.join("config.ini"), ini_content)
             .expect("Could not write INI file");
